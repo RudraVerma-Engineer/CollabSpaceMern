@@ -1,0 +1,83 @@
+/* Design tokens. Everything else references these variables. */
+:root {
+  --bg: #eef1f6;
+  --surface: #ffffff;
+  --surface-sunken: #f4f6fa;
+  --rail: #0d1b3e; /* sidebar */
+  --rail-text: #aab6d6;
+  --rail-active: #ffffff;
+
+  --ink: #0f1a33;
+  --muted: #5a6685;
+  --line: #dbe1ec;
+
+  --primary: #2b59ff;
+  --primary-hover: #1d45d6;
+  --primary-soft: #e8eeff;
+
+  --primary-soft-hover: #d6e0ff;
+  --primary-border: #c9d6ff;
+  --bad-border: #f0b9c3;
+  --toast-bg: #0f1a33;
+  --toast-text: #ffffff;
+
+  --good: #13a06f;
+  --good-soft: #e3f6ee;
+  --bad: #d63a54;
+  --bad-soft: #fde8ec;
+  --warn: #b97a00;
+  --warn-soft: #fff3d6;
+
+  /* project pipeline stages */
+  --stage-idea: #8d97b0;
+  --stage-planning: #2b59ff;
+  --stage-in_development: #ff7a2f;
+  --stage-completed: #13a06f;
+  --stage-paused: #b97a00;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+
+  --shadow: 0 1px 2px rgba(15, 26, 51, 0.06), 0 4px 14px rgba(15, 26, 51, 0.05);
+
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+
+  --sidebar-width: 232px;
+  --header-height: 60px;
+}
+
+/* Dark theme: applied with <html data-theme="dark"> (see hooks/useTheme.js) */
+:root[data-theme="dark"] {
+  --bg: #0a1124;
+  --surface: #121b36;
+  --surface-sunken: #1a2446;
+  --rail: #070d1f;
+
+  --ink: #e8ecf8;
+  --muted: #9aa6c7;
+  --line: #27335a;
+
+  --primary: #5b7dff;
+  --primary-hover: #7a96ff;
+  --primary-soft: #1d2a5c;
+  --primary-soft-hover: #26367a;
+  --primary-border: #33468f;
+  --bad-border: #7a2a3a;
+  --toast-bg: #e8ecf8;
+  --toast-text: #0f1a33;
+
+  --good-soft: #0f3326;
+  --bad-soft: #3a1620;
+  --warn-soft: #3a2d0a;
+  --warn: #e0a63a;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 14px rgba(0, 0, 0, 0.3);
+  color-scheme: dark;
+}

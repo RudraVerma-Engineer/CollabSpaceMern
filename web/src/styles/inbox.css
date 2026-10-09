@@ -1,0 +1,78 @@
+/* Collaboration requests + notifications */
+.inbox-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.inbox-item-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inbox-item-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.request-message {
+  padding: 8px 12px;
+  border-left: 3px solid var(--line);
+  background: var(--surface-sunken);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: var(--text-sm);
+  overflow-wrap: anywhere;
+}
+
+.notification-item {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.notification-item.unread {
+  background: var(--primary-soft);
+  border-color: var(--primary-border);
+}
+
+.notification-item:hover {
+  border-color: var(--primary);
+}
+
+.notification-dot {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.notification-item.unread .notification-dot {
+  background: var(--primary);
+}
+
+.notification-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.notification-body span {
+  overflow-wrap: anywhere;
+}
+
+.search-group {
+  margin-bottom: 28px;
+}
