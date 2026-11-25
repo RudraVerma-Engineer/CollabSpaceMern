@@ -33,6 +33,19 @@
   color: #000000;
 }
 
+/* Keep the post type tags crisp and high contrast in the light theme. */
+:root:not([data-theme="dark"]) .filter-chip {
+  border-color: #d7dfef;
+  background: #ffffff;
+  color: #284477;
+}
+
+:root:not([data-theme="dark"]) .filter-chip.active {
+  border-color: #0d1b3e;
+  background: #0d1b3e;
+  color: #ffffff;
+}
+
 .post-card {
   display: flex;
   flex-direction: column;
