@@ -6,6 +6,9 @@ node_modules/
 .env.*
 !.env.example
 
+#demo
+LIVE_DEMO_SCRIPT.md
+
 # Logs
 logs/
 *.log
