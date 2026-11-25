@@ -30,7 +30,7 @@
 .filter-chip.active {
   background: var(--ink);
   border-color: var(--ink);
-  color: #fff;
+  color: #000000;
 }
 
 .post-card {
